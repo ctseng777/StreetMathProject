@@ -151,6 +151,52 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Venue badges above title */
+.venue-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--background-accent);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 0.75rem;
+}
+
+.venue-icon {
+  color: #f59e0b; /* amber */
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.venue-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 0.25rem;
+}
+
+.venue-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+  .venue-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+}
+
 .publication-venue {
     color: var(--text-secondary);
     width: fit-content;
@@ -748,6 +794,5 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
 
 
